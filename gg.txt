@@ -1,0 +1,8 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+df=pd.read_csv("C:/Users/91988/Downloads/archive (1)/Cars93.csv")
+df=df.head(2)
+fig=plt.figure()
+plt.title("Price Range of Car")
+plt.boxplot(df["Price"])
